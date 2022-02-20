@@ -28,8 +28,8 @@ jobs:
 
       - name: git push
         run: |
-          git config --global user.email "${EMAIL_ADDR}"
-          git config --global user.name "${USERNAME}"
+          git config --global user.email "${{ env.EMAIL_ADDR }}"
+          git config --global user.name "${{ env.USERNAME }}"
           git add .
           git commit -m "add: added by schedule-test workflow"
           git push origin master
