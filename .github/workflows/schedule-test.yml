@@ -25,6 +25,8 @@ jobs:
           echo "$EMAIL_ADDR"
           echo ${EMAIL_ADDR}
           echo "${EMAIL_ADDR}"
+          git config --global user.email $EMAIL_ADDR
+          git config --global user.name &USERNAME
 
       - name: write text
         run: |
@@ -33,8 +35,6 @@ jobs:
 
       - name: git push
         run: |
-          git config --global user.email "${EMAIL_ADDR}"
-          git config --global user.name "${USERNAME}"
           git add .
           git commit -m "add: added by schedule-test workflow"
           git push origin master
