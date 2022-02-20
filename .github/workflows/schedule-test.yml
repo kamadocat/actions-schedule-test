@@ -15,7 +15,7 @@ jobs:
 
       - name: set current datetime and secrets as env variable
         env: |
-          TZ: 'Asia/Tokyo'
+          TZ: Asia/Tokyo
           EMAIL_ADDR: ${{ secrets.EMAIL_ADDR }}
           USERNAME: ${{ secrets.USERNAME }}
         run: |
