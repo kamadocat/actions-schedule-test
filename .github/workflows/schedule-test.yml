@@ -1,9 +1,9 @@
 name: schedule-test
 
 on:
-  push
+  push:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '* * * * *'
 
 jobs:
   build:
