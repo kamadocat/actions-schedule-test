@@ -18,7 +18,7 @@ jobs:
           TZ: 'Asia/Tokyo'
           EMAIL_ADDR: ${{ secrets.EMAIL_ADDR }}
           USERNAME: ${{ secrets.USERNAME }}
-        run: echo "CURRENT_DATETIME=$(date + '%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+        run: echo "CURRENT_DATETIME=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
       - name: write text
         run: |
