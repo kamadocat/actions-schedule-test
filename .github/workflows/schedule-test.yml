@@ -20,7 +20,7 @@ jobs:
           USERNAME: "${{ secrets.USERNAME }}"
         run: |
           echo ${{ env.CURRENT_DATETIME }}
-          echo "CURRENT_DATETIME=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+          echo "CURRENT_DATETIME=$(date +'%Y-%m-%d_%H:%M:%S')" >> $GITHUB_ENV
           echo $EMAIL_ADDR
           echo "$EMAIL_ADDR"
           echo ${EMAIL_ADDR}
