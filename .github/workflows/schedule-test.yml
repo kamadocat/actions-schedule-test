@@ -1,8 +1,8 @@
 name: schedule-test
 
 on:
-  - push
-  - schedule:
+  push
+  schedule:
     - cron: '* * * * *'
 
 jobs:
